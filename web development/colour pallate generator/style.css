@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: black;
+  height: 40vh;
+  margin: 10vh;
+  margin-top: 30vh;
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px;
+  color: teal;
+}
+
+.color-box {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  margin: 10px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+}
+
+button {
+  text-align: center;
+  margin-left: 43vw;
+  margin-top: 1vh;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+}
