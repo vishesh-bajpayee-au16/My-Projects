@@ -154,9 +154,14 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 #card-01 {
   width: 60vh;
   text-align: center;
+}
+
+#btn-card {
+  top: 35vh;
 }
