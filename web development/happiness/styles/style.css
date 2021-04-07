@@ -7,7 +7,6 @@
 }
 
 body {
-  position: relative;
   background-image: url(/images/banner.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -41,7 +40,7 @@ body .selection-div a:hover {
   color: black;
 }
 
-body h1 {
+body #banner-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,7 +59,7 @@ body h1 {
           animation: drop 1s ease-in-out 0s 1 forwards alternate;
 }
 
-body h2 {
+body #main-heading {
   text-align: center;
   position: relative;
   top: 40vh;
@@ -135,6 +134,53 @@ body h4 {
   color: crimson;
   -webkit-animation: colorChange 5s both ease-in-out infinite alternate;
           animation: colorChange 5s both ease-in-out infinite alternate;
+}
+
+section {
+  position: absolute;
+  top: 102vh;
+  left: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 30vh;
+}
+
+section .service-container {
+  text-align: center;
+  width: 15vw;
+  margin-top: 150px;
+  background-color: wheat;
+  border: none;
+  border-radius: 25px;
+  margin-left: 120px;
+}
+
+section #service-card-icon {
+  font-size: 100px;
+  padding: 80px;
+  color: #ffca3a;
+  -webkit-animation: colorChange 5s both ease-in-out infinite alternate;
+          animation: colorChange 5s both ease-in-out infinite alternate;
+}
+
+section .card-heading {
+  padding: 10px;
+}
+
+section .card-para {
+  padding: 15px;
+}
+
+section #service-head {
+  position: absolute;
+  left: 30vw;
+  padding-top: 10px;
+  font-size: 48px;
+  text-align: center;
 }
 
 @-webkit-keyframes scroll {

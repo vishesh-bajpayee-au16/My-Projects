@@ -11,8 +11,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+// ______________________________ BODY STYLES  _____________________________________________________
+
 body {
-  position: relative;
+  // position: relative;
   background-image: url(/images/banner.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -42,7 +44,7 @@ body {
       }
     }
   }
-  h1 {
+  #banner-head {
     @include centerItems();
     color: $heading;
     font-size: 100px;
@@ -51,7 +53,7 @@ body {
     left: 23vw;
     animation: drop 1s ease-in-out 0s 1 forwards alternate;
   }
-  h2 {
+  #main-heading {
     text-align: center;
     position: relative;
     top: 40vh;
@@ -121,6 +123,52 @@ body {
     animation: colorChange 5s both ease-in-out infinite alternate;
   }
 }
+
+// _______________________________ FORM STYLES  _____________________________________________________
+
+section {
+  position: absolute;
+  top: 102vh;
+  left: 30vh;
+  display: flex;
+  justify-content: center;
+  left: 30vh;
+
+  .service-container {
+    text-align: center;
+    width: 15vw;
+    margin-top: 150px;
+    background-color: wheat;
+
+    border: none;
+    border-radius: 25px;
+    margin-left: 120px;
+  }
+  #service-card-icon {
+    font-size: 100px;
+    padding: 80px;
+    color: $colorYellow;
+    animation: colorChange 5s both ease-in-out infinite alternate;
+  }
+
+  .card-heading {
+    padding: 10px;
+  }
+
+  .card-para {
+    padding: 15px;
+  }
+
+  #service-head {
+    position: absolute;
+    left: 30vw;
+    padding-top: 10px;
+    // background-color: violet;
+    font-size: 48px;
+    text-align: center;
+  }
+}
+// ______________________________ ANIMATION KEYFRAMES  _____________________________________________________
 
 @keyframes scroll {
   from {
