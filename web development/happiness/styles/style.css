@@ -50,7 +50,7 @@ body #banner-head {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #1a535c;
+  color: black;
   font-size: 100px;
   position: absolute;
   top: -25vh;
@@ -132,8 +132,8 @@ body h4 {
   top: 83vh;
   left: 48.3vw;
   color: crimson;
-  -webkit-animation: colorChange 5s both ease-in-out infinite alternate;
-          animation: colorChange 5s both ease-in-out infinite alternate;
+  -webkit-animation: colorChange 3s both ease-in-out infinite alternate;
+          animation: colorChange 3s both ease-in-out infinite alternate;
 }
 
 section {
@@ -153,7 +153,6 @@ section .service-container {
   text-align: center;
   width: 15vw;
   margin-top: 150px;
-  background-color: wheat;
   border: none;
   border-radius: 25px;
   margin-left: 120px;
@@ -177,10 +176,13 @@ section .card-para {
 
 section #service-head {
   position: absolute;
-  left: 30vw;
+  left: 10vw;
   padding-top: 10px;
   font-size: 48px;
   text-align: center;
+  font-size: 100px;
+  -webkit-animation: colorChange 5s both ease-in-out infinite alternate;
+          animation: colorChange 5s both ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes scroll {

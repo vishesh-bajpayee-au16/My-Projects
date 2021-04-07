@@ -16,6 +16,7 @@
 body {
   // position: relative;
   background-image: url(/images/banner.png);
+  // background-color: wheat;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100vw;
@@ -46,7 +47,7 @@ body {
   }
   #banner-head {
     @include centerItems();
-    color: $heading;
+    color: black;
     font-size: 100px;
     position: absolute;
     top: -25vh;
@@ -120,7 +121,7 @@ body {
     top: 83vh;
     left: 48.3vw;
     color: crimson;
-    animation: colorChange 5s both ease-in-out infinite alternate;
+    animation: colorChange 3s both ease-in-out infinite alternate;
   }
 }
 
@@ -138,7 +139,6 @@ section {
     text-align: center;
     width: 15vw;
     margin-top: 150px;
-    background-color: wheat;
 
     border: none;
     border-radius: 25px;
@@ -161,11 +161,13 @@ section {
 
   #service-head {
     position: absolute;
-    left: 30vw;
+    left: 10vw;
     padding-top: 10px;
     // background-color: violet;
     font-size: 48px;
     text-align: center;
+    font-size: 100px;
+    animation: colorChange 5s both ease-in-out infinite alternate;
   }
 }
 // ______________________________ ANIMATION KEYFRAMES  _____________________________________________________
