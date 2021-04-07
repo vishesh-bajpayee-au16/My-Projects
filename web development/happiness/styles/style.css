@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  position: relative;
+  background-image: url(/images/banner.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+body .selection-div {
+  position: absolute;
+  left: 13vw;
+  top: 50vh;
+}
+
+body .selection-div a {
+  text-decoration: none;
+  background-color: crimson;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 40px;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  -webkit-transition: all ease-in 0.4s;
+  transition: all ease-in 0.4s;
+  font-weight: 500;
+}
+
+body .selection-div a:hover {
+  color: black;
+}
+
+body h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1a535c;
+  font-size: 100px;
+  position: absolute;
+  top: -25vh;
+  left: 23vw;
+  -webkit-animation: drop 1s ease-in-out 0s 1 forwards alternate;
+          animation: drop 1s ease-in-out 0s 1 forwards alternate;
+}
+
+body h2 {
+  text-align: center;
+  position: relative;
+  top: 40vh;
+  color: teal;
+}
+
+body #sad {
+  background-color: #ff595e;
+  -webkit-transition: all ease-in 0.4s;
+  transition: all ease-in 0.4s;
+}
+
+body #sad:hover {
+  background-color: #ff595f00;
+}
+
+body #anxious {
+  background-color: #8ac926;
+}
+
+body #anxious:hover {
+  background-color: #ff595f00;
+}
+
+body #heartbreak {
+  background-color: #ffca3a;
+}
+
+body #heartbreak:hover {
+  background-color: #ff595f00;
+}
+
+body #lonely {
+  background-color: #00b4d8;
+}
+
+body #lonely:hover {
+  background-color: #ff595f00;
+}
+
+body #tired {
+  background-color: #1982c4;
+}
+
+body #tired:hover {
+  background-color: #ff595f00;
+}
+
+body #depressed {
+  background-color: #6a4c93;
+}
+
+body #depressed:hover {
+  background-color: #ff595f00;
+}
+
+body #scroll-down {
+  position: absolute;
+  font-size: 40px;
+  left: 50vw;
+  top: 85vh;
+  color: crimson;
+  position: absolute;
+  -webkit-animation: scroll 1s both ease-in-out infinite alternate, colorChange 5s both ease-in-out infinite alternate;
+          animation: scroll 1s both ease-in-out infinite alternate, colorChange 5s both ease-in-out infinite alternate;
+}
+
+body h4 {
+  position: absolute;
+  top: 83vh;
+  left: 48.3vw;
+  color: crimson;
+  -webkit-animation: colorChange 5s both ease-in-out infinite alternate;
+          animation: colorChange 5s both ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes scroll {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+@keyframes scroll {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+@-webkit-keyframes drop {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(50vh);
+            transform: translateY(50vh);
+    opacity: 1;
+  }
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(50vh);
+            transform: translateY(50vh);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes colorChange {
+  0% {
+    color: crimson;
+  }
+  25% {
+    color: #ff595e;
+  }
+  45% {
+    color: #8ac926;
+  }
+  65% {
+    color: #ffca3a;
+  }
+  85% {
+    color: #1982c4;
+  }
+  100% {
+    color: #6a4c93;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: crimson;
+  }
+  25% {
+    color: #ff595e;
+  }
+  45% {
+    color: #8ac926;
+  }
+  65% {
+    color: #ffca3a;
+  }
+  85% {
+    color: #1982c4;
+  }
+  100% {
+    color: #6a4c93;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,169 @@
+@import "./colorcodes.scss";
+@mixin centerItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  position: relative;
+  background-image: url(/images/banner.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+
+  .selection-div {
+    position: absolute;
+    left: 13vw;
+    top: 50vh;
+
+    a {
+      text-decoration: none;
+      background-color: crimson;
+      color: white;
+      padding: 20px;
+      cursor: pointer;
+      margin: 20px;
+      font-size: 40px;
+      border: none;
+      border-radius: 30px;
+      text-align: center;
+      transition: all ease-in 0.4s;
+      font-weight: 500;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  h1 {
+    @include centerItems();
+    color: $heading;
+    font-size: 100px;
+    position: absolute;
+    top: -25vh;
+    left: 23vw;
+    animation: drop 1s ease-in-out 0s 1 forwards alternate;
+  }
+  h2 {
+    text-align: center;
+    position: relative;
+    top: 40vh;
+    color: teal;
+  }
+
+  #sad {
+    background-color: $colorRed;
+    transition: all ease-in 0.4s;
+    &:hover {
+      background-color: #ff595f00;
+    }
+  }
+  #anxious {
+    background-color: $colorGreen;
+    &:hover {
+      background-color: #ff595f00;
+    }
+  }
+  #heartbreak {
+    background-color: $colorYellow;
+    &:hover {
+      background-color: #ff595f00;
+    }
+  }
+  #lonely {
+    background-color: $colorLightBlue;
+    &:hover {
+      background-color: #ff595f00;
+    }
+  }
+  #tired {
+    background-color: $colorBlue;
+    &:hover {
+      background-color: #ff595f00;
+    }
+  }
+  #depressed {
+    background-color: $colorVoilet;
+    &:hover {
+      background-color: #ff595f00;
+    }
+  }
+  #scroll-down {
+    position: absolute;
+    font-size: 40px;
+    left: 50vw;
+    top: 85vh;
+    color: crimson;
+    position: absolute;
+    // animation-name: scroll;
+    // animation-duration: 1s;
+    // animation-fill-mode: forwards;
+    // animation-delay: 0s;
+    // animation-iteration-count: infinite;
+    // animation-direction: alternate;
+    // animation-timing-function: ease-in-out;
+    animation: scroll 1s both ease-in-out infinite alternate,
+      colorChange 5s both ease-in-out infinite alternate;
+    //   left 2s ease-in-out infinite alternate;
+  }
+  h4 {
+    position: absolute;
+    top: 83vh;
+    left: 48.3vw;
+    color: crimson;
+    animation: colorChange 5s both ease-in-out infinite alternate;
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    transform: translateY(10vh);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(50vh);
+    opacity: 1;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: crimson;
+  }
+  25% {
+    color: $colorRed;
+  }
+  45% {
+    color: $colorGreen;
+  }
+
+  65% {
+    color: $colorYellow;
+  }
+  85% {
+    color: $colorBlue;
+  }
+
+  100% {
+    color: $colorVoilet;
+  }
+}
