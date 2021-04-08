@@ -17,7 +17,7 @@ body {
 body .selection-div {
   position: absolute;
   left: 13vw;
-  top: 50vh;
+  top: 52vh;
 }
 
 body .selection-div a {
@@ -129,8 +129,8 @@ body #scroll-down {
 
 body h4 {
   position: absolute;
-  top: 83vh;
-  left: 48.3vw;
+  top: 80vh;
+  left: 47.4vw;
   color: crimson;
   -webkit-animation: colorChange 3s both ease-in-out infinite alternate;
           animation: colorChange 3s both ease-in-out infinite alternate;
