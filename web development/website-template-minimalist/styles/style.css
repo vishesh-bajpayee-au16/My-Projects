@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  z-index: 1;
+}
+
+main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.5))), url("/images/banner.jpg");
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("/images/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main header {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 30px;
+  line-height: 7vh;
+}
+
+main header a {
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #604361;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  outline: none;
+  cursor: pointer;
+}
+
+main header a:hover {
+  color: #a4637b;
+}
+
+main h1 {
+  font-weight: 500;
+  font-size: 150px;
+  color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  font-family: "Kaushan Script", cursive;
+  left: 23vw;
+  top: 40%;
+}
+
+main #banner-btn {
+  position: absolute;
+  top: 63%;
+  left: 48vw;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+main #banner-btn:hover {
+  background-color: white;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=style.css.map */
