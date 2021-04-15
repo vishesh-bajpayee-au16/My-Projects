@@ -1,0 +1,10 @@
+.button1 {
+  position: absolute;
+  right: 50px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
