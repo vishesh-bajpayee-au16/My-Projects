@@ -9,7 +9,7 @@ form.addEventListener("submit", handleSubmit);
 
 async function handleSubmit(e) {
   e.preventDefault();
-  const data = {
+  const contactData = {
     email: email.value,
     pasword: pasword.value,
     address: address.value,
@@ -17,4 +17,5 @@ async function handleSubmit(e) {
     zip: zip.value,
     checkpox: checkbox.value,
   };
+  const contactData = await axios.post("/contactUs-data", contactData);
 }
