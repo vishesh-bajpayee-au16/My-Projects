@@ -23,7 +23,8 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
-
+    <!-- AXIOS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>WEBSITE BOOTSTRAP</title>
   </head>
 
@@ -147,14 +148,15 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form>
+            <form action="/signin">
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label"
                   >Email address</label
                 >
                 <input
+                  name="email"
                   type="email"
-                  class="form-control"
+                  class="form-control signup-email"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                 />
@@ -167,8 +169,9 @@
                   >Password</label
                 >
                 <input
+                  name="signup-p"
                   type="password"
-                  class="form-control"
+                  class="form-control signup-pasword"
                   id="exampleInputPassword1"
                 />
               </div>

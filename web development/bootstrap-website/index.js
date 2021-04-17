@@ -11,8 +11,16 @@ app.get("/contact", (req, res) => {
   res.sendFile(__dirname + "/public/contact.html");
 });
 
+app.get("/contactUs-data", (req, res) => {
+  res.send("Contact info received");
+});
+
 app.get("/about", (req, res) => {
   res.sendFile(__dirname + "/public/about.html");
 });
 
-app.listen(3000, () => console.log("Server Started"));
+app.get("/signup", (req, res) => {
+  res.send(__dirname + "/public/signup.html");
+});
+
+app.listen(3100, () => console.log("Server Started"));
