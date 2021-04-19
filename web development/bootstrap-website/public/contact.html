@@ -23,6 +23,8 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js" defer></script>
 
     <title>ABOUT ME</title>
   </head>
@@ -114,10 +116,10 @@
     <!-- FORM -->
 
     <div class="container">
-      <form class="row g-3" id="form" method="POST">
+      <form class="row g-3" method="POST" action="/contactUs-data">
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" name="email" class="form-control" id="email" />
+          <input type="email" name="email" class="form-control email" />
         </div>
         <div class="col-md-6">
           <label for="inputPassword4" class="form-label">Password</label>

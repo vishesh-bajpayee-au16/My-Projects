@@ -1,9 +1,10 @@
 const express = require("express");
 const app = express();
-const fileSystem = require("fs");
 const data = require("./data.json");
+const fileSystem = require("fs");
 app.use(express.static("./public"));
 app.use(express.json());
+
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
@@ -17,11 +18,14 @@ app.get("/contactUs-data", (req, res) => {
 });
 
 app.post("/contactUs-data", (req, res) => {
-  DataCue.push(req.body);
-  res.join({ error: 0 });
-});
+  data.push(req.body);
+  res.send({ error: 0 });
 
-fileSystem.writeFile("./data.json", data);
+  fileSystem.writeFileSync(
+    __dirname + "/data.json",
+    JSON.stringify(data, null, 4)
+  );
+});
 
 app.get("/about", (req, res) => {
   res.sendFile(__dirname + "/public/about.html");
@@ -30,5 +34,5 @@ app.get("/about", (req, res) => {
 app.get("/signup", (req, res) => {
   res.send(__dirname + "/public/signup.html");
 });
-
+// Calling server
 app.listen(3100, () => console.log("Server Started"));
