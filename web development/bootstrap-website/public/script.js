@@ -17,5 +17,6 @@ async function handleSubmit(e) {
     zip: zip.value,
     checkpox: checkbox.value,
   };
+  // await cal
   await axios.post("/contactUs-data", contactData);
 }
