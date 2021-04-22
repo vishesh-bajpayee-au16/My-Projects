@@ -52,12 +52,12 @@
     const user = document.getElementById("username");
     const password = document.getElementById("password")
 
-    form.addEventListener("submit", async (e) => {
-        e.preventDefault();
+    async (e) => {
+        
         const data = {
             username:username.value,
             password:password.value,
         }
         await axios.post("/home",data)
-    })
+    }
 </script>

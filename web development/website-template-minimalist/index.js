@@ -15,12 +15,12 @@ app.get("/", (req, res) => {
 });
 
 app.get("/home", (req, res) => {
-  res.send("AWesome");
+  res.send("Awesome");
 });
 
 app.post("/home", (req, res) => {
   data.push(req.body);
-  res.render("home");
+  res.render("home", req.body);
 
   fs.writeFileSync(
     __dirname + "/database/database.json",

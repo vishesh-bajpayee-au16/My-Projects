@@ -18,5 +18,24 @@
     {
         "username": "visheshbajpayee",
         "password": "dddddd"
+    },
+    {
+        "username": "vishesh",
+        "password": "1234"
+    },
+    {
+        "username": "vishesh",
+        "password": "1234",
+        "_locals": {}
+    },
+    {
+        "username": "vishesh",
+        "password": "123345",
+        "_locals": {}
+    },
+    {
+        "username": "vishesh",
+        "password": "4444",
+        "_locals": {}
     }
 ]
