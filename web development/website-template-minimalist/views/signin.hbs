@@ -77,12 +77,13 @@
 
 <h1 id="dynamic">Dynamic <span id="website">Website</span></h1>
 
-<form action="/signin">
-    <button id="signin-btn" class="btn btn-info">Sign in</button>
+<form action="/" >
+    <button id="signin-btn" class="btn btn-info">login</button>
 </form>
 
 
 <script>
+  'use strict';
     const form = document.getElementsByTagName("form")[0];
     const username = document.getElementById("username");
     const email = document.getElementById("email");
@@ -90,18 +91,18 @@
     const confirmPassword = document.getElementById("confirmPassword")
     const password = document.getElementById("password");
     const alertMessage = document.getElementById("alert");
-    async (e) => {
+    async  () => {
         
-
-        const data = {
-           username:username.value,
-           email:email.value,
-           contact:contact.value,
-           password:password.value
-           
-            
-        }
-        console.log(data)
-        await axios.post("/signin",data)
+      
+      const data = {
+          username:username.value,
+          email:email.value,
+          contact:contact.value,
+          password:password.value,
+          };
+      
+      const fetchedData = await axios.post("/signin",data)
+      console.log(fetchedData)
     }
+    
 </script>

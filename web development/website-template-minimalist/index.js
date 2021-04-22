@@ -1,8 +1,9 @@
+"use strict";
 const express = require("express");
 const exphbs = require("express-handlebars");
 const fs = require("fs");
 const axios = require("axios");
-const data = require("./database/users.json");
+const userData = require("./database/users.json");
 const loginData = require("./database/login.json");
 const app = express();
 app.use(express.static("public"));
@@ -25,7 +26,7 @@ app.post("/home", (req, res) => {
 
   fs.writeFileSync(
     __dirname + "/database/login.json",
-    JSON.stringify(data, null, 4)
+    JSON.stringify(loginData, null, 4)
   );
 });
 
@@ -35,11 +36,11 @@ app.get("/signin", (req, res) => {
 
 app.post("/signin", (req, res) => {
   console.log(req.body);
-  data.push(req.body);
-  res.render("signin", req.body);
+  res.render("home", req.body);
+  userData.push(req.body);
 
   fs.writeFileSync(__dirname + "/database/users.json"),
-    JSON.stringify(data, null, 4);
+    JSON.stringify(userData, null, 4);
 });
 
-app.listen(4444, () => console.log("Server Started"));
+app.listen(5000, () => console.log("Server Started"));
