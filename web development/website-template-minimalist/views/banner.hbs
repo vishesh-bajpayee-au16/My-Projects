@@ -39,7 +39,7 @@
 
 
 <div  class="banner-container  text-light  ">
-<form action="/home" method="post">
+<form action="/dashboard" method="post">
   <div class="mb-3">
     <label for="username" class="form-label">Enter your Name</label>
     <input type="text" class="form-control" id="username" name="username" >    
@@ -72,6 +72,6 @@
             time:timestamp,
             
         }
-        await axios.post("/home",data)
+        await axios.post("/dashboard",data)
     }
 </script>

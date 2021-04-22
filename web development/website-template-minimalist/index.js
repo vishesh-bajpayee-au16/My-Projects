@@ -16,13 +16,20 @@ app.get("/", (req, res) => {
   res.render("banner");
 });
 
-app.get("/home", (req, res) => {
+app.get("/dashboard", (req, res) => {
   res.send("Awesome");
 });
 
-app.post("/home", (req, res) => {
+app.post("/dashboard", (req, res) => {
   loginData.push(req.body);
-  res.render("home", req.body);
+  for (let index = 0; index < userData.length; index++) {
+    const elementU = userData[index];
+    if (req.body.username === elementU.username) {
+      res.render("dashboard", req.body);
+    } else {
+      res.render("signin");
+    }
+  }
 
   fs.writeFileSync(
     __dirname + "/database/login.json",
