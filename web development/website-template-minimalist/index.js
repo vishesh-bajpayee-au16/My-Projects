@@ -2,7 +2,8 @@ const express = require("express");
 const exphbs = require("express-handlebars");
 const fs = require("fs");
 const axios = require("axios");
-const data = require("./database/database.json");
+const data = require("./database/users.json");
+const loginData = require("./database/login.json");
 const app = express();
 app.use(express.static("public"));
 app.use(express.json());
@@ -19,11 +20,11 @@ app.get("/home", (req, res) => {
 });
 
 app.post("/home", (req, res) => {
-  data.push(req.body);
+  loginData.push(req.body);
   res.render("home", req.body);
 
   fs.writeFileSync(
-    __dirname + "/database/database.json",
+    __dirname + "/database/login.json",
     JSON.stringify(data, null, 4)
   );
 });
@@ -32,4 +33,13 @@ app.get("/signin", (req, res) => {
   res.render("signin");
 });
 
-app.listen(4000, () => console.log("Server Started"));
+app.post("/signin", (req, res) => {
+  console.log(req.body);
+  data.push(req.body);
+  res.render("signin", req.body);
+
+  fs.writeFileSync(__dirname + "/database/users.json"),
+    JSON.stringify(data, null, 4);
+});
+
+app.listen(4444, () => console.log("Server Started"));
