@@ -28,4 +28,8 @@ app.post("/home", (req, res) => {
   );
 });
 
+app.get("/signin", (req, res) => {
+  res.render("signin");
+});
+
 app.listen(4000, () => console.log("Server Started"));

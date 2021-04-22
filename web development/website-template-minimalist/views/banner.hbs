@@ -29,7 +29,6 @@
 </style>
 
 
-
 <div  class="banner-container  text-light  ">
 <form action="/home" method="post">
   <div class="mb-3">
@@ -46,17 +45,23 @@
 
 <h1 id="dynamic">Dynamic <span id="website">Website</span></h1>
 
+<form action="/signin">
+    <button>Sign in</button>
+</form>
+
 
 <script>
     const form = document.getElementsByTagName("form")[0];
     const user = document.getElementById("username");
     const password = document.getElementById("password")
-
+    let timestamp = new Date().toLocaleString();
     async (e) => {
         
         const data = {
             username:username.value,
             password:password.value,
+            time:timestamp,
+            
         }
         await axios.post("/home",data)
     }
