@@ -1,0 +1,63 @@
+<style>
+    .banner-container {
+        position: absolute;
+        top: 30vh;
+        left: 15vw;
+        width: 35vw;
+        background-color: teal;
+        padding: 40px;
+        border-radius: 30px;
+
+    }
+    #dynamic {
+        color: teal;
+        position: absolute;
+        right: 20vw;
+        font-size: 100px;
+        top:35vh;
+        left: 65vw;
+
+    }
+
+    #website {
+        color: white;
+        font-size: 50px;
+        position: absolute;
+        top: 3.5vw;
+        left: 1vw;
+    }
+</style>
+
+
+
+<div  class="banner-container  text-light  ">
+<form action="/home" method="post">
+  <div class="mb-3">
+    <label for="username" class="form-label">Enter your Name</label>
+    <input type="text" class="form-control" id="username" name="username" >    
+  </div>
+  <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input name="password" type="password" class="form-control" id="password">
+  </div>
+  <button type="submit" class="btn btn-dark">Submit</button>
+</form>
+</div>
+
+<h1 id="dynamic">Dynamic <span id="website">Website</span></h1>
+
+
+<script>
+    const form = document.getElementsByTagName("form")[0];
+    const user = document.getElementById("username");
+    const password = document.getElementById("password")
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const data = {
+            username:username.value,
+            password:password.value,
+        }
+        await axios.post("/home",data)
+    })
+</script>
