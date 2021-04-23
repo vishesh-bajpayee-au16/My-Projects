@@ -1,0 +1,213 @@
+<style>
+    * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+h1 {
+  text-align: center;
+  margin: 12px;
+  font-size: 5rem;
+}
+
+#span-1 {
+  color: #f94144;
+}
+
+#span-2 {
+  color: #f3722c;
+}
+#span-3 {
+  color: #f8961e;
+}
+
+#span-4 {
+  color: #f9844a;
+}
+
+#span-5 {
+  color: #f9c74f;
+}
+
+#span-6 {
+  color: #90be6d;
+}
+
+#span-7 {
+  color: #43aa8b;
+}
+
+#span-8 {
+  color: #4d908e;
+}
+
+#span-9 {
+  color: #277da1;
+}
+
+.interactive-container {
+  text-align: center;
+  position: relative;
+  margin: 24px;
+  padding: 12px;
+}
+
+#input-field {
+  padding: 10px 10px;
+  width: 60vh;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+
+  color: black;
+}
+
+#add-todo {
+  position: absolute;
+  top: 60px;
+  padding: 12px 10px;
+  margin: 12px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background-color: #3ec1d3;
+  left: 46vw;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  margin-right: 28vw;
+  padding: 30px;
+}
+
+li {
+  background-color: #ff165d;
+  color: white;
+  margin: 24px;
+  padding: 12px 24px;
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  list-style-type: none;
+}
+
+#delete {
+  background-color: #ff3438;
+  color: white;
+  margin-left: 28vw;
+}
+
+button {
+  position: absolute;
+  left: 20vw;
+  outline: none;
+  padding: 8px 12px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background-color: #ff9a00;
+  color: white;
+}
+
+</style>  
+  
+  
+  <h1>
+      <span id="span-1">T</span>
+      <span id="span-2">o</span>
+      <span id="span-3">d</span>
+      <span id="span-4">o</span>
+      <span id="span-5"> </span>
+      <span id="span-6">l</span>
+      <span id="span-7">i</span>
+      <span id="span-8">s</span>
+      <span id="span-9">t</span>
+    </h1>
+    <div class="interactive-container">
+      <input type="text" id="input-field" placeholder="Add to List" />
+      <button id="add-todo">Add to do</button>
+    </div>
+    <div class="list">
+      <ul id="todo-list"></ul>
+    </div>
+    <button id="delete">Delete All</button>
+
+
+    <script>
+
+        var todoList = document.getElementById("todo-list");
+var inputField = document.getElementById("input-field");
+var addTodoButton = document.getElementById("add-todo");
+var deleteAll = document.getElementById("delete");
+const addItemToList = function (event) {
+  var newTodoItem = inputField.value;
+  //   todoList.innerHTML += `<li>${newTodoItem} <button>X</button></li> `;
+
+  //
+
+  //   create a button
+  var removeButtom = document.createElement("button");
+  removeButtom.innerText = "Delete";
+
+  // create edit button
+  var editButton = document.createElement("button");
+  editButton.innerText = "edit";
+  editButton.id = "editbtn";
+
+  // create cross button
+  var doneButton = document.createElement("button");
+  doneButton.innerText = "Done";
+
+  //   event listener for remove button
+  removeButtom.addEventListener("click", function () {
+    newLiTag.remove();
+    editButton.remove();
+    // e.target.parentElement.remove();
+  });
+
+  //  event listener for edit button
+  editButton.addEventListener("click", function () {
+    let changedVal = prompt("Enter changed entry");
+    newLiTag.innerText = changedVal;
+    newLiTag.appendChild(removeButtom);
+    newLiTag.appendChild(doneButton);
+    newLiTag.appendChild(editButton);
+  });
+
+  // event listener for done button
+  doneButton.addEventListener("click", function () {
+    newLiTag.style.textDecoration = "line-through";
+    color;
+  });
+  // create a new li tag
+  var newLiTag = document.createElement("li");
+  newLiTag.innerText = newTodoItem;
+
+  // Put button inside li tag
+  newLiTag.appendChild(removeButtom);
+
+  // put li tag inside todoList
+  todoList.appendChild(newLiTag);
+  // put edit button inside todoList
+  newLiTag.appendChild(editButton);
+  // put done button inside todolist
+  newLiTag.appendChild(doneButton);
+  editButton.style.marginLeft = "100px";
+  removeButtom.style.marginLeft = "200px";
+};
+
+deleteAll.addEventListener("click", function () {
+  todoList.remove();
+  addTodoButton.addEventListener("click", addItemToList);
+});
+addTodoButton.addEventListener("click", addItemToList);
+
+    </script>

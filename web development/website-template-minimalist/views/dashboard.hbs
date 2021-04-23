@@ -8,7 +8,16 @@
         font-size: 80px;
         color: teal;
     }
+    #todo-btn {
+        position: absolute;
+        left: 20px;
+    }
+    h2 {
+        color: white;
+    }
 </style>
 
 <h1>Welcome, <span>{{username}}</span></h1>
-
+<h2>Whats in your mind today?</h2>
+<form action="/todo">
+<button id="todo-btn" class="btn btn-info" >To-Do List</button></form>

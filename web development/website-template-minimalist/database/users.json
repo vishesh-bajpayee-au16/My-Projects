@@ -1,7 +1,107 @@
 [
-  {
-    "username": "vishesh",
-    "password": "NJh7bxf4vLXmRNc",
-    "_locals": {}
-  }
+    {
+        "username": "vishesh",
+        "email": "vishubro22101999@gmail.com",
+        "contact": "vishesh",
+        "password": "NJh7bxf4vLXmRNc",
+        "confirmPassword": "21312231"
+    },
+    {
+        "username": "vishesh",
+        "email": "vishubro22101999@gmail.com",
+        "contact": "vishesh",
+        "password": "NJh7bxf4vLXmRNc",
+        "confirmPassword": "21312321"
+    },
+    {
+        "username": "vishesh",
+        "email": "vishubro22101999@gmail.com",
+        "contact": "vishesh",
+        "password": "NJh7bxf4vLXmRNc",
+        "confirmPassword": "123123123123"
+    },
+    {
+        "username": "vishesh",
+        "email": "vishubro22101999@gmail.com",
+        "contact": "vishesh",
+        "password": "",
+        "confirmPassword": ""
+    },
+    {
+        "username": "visheshbajpayee",
+        "email": "vishubro22101999@gmail.com",
+        "contact": "vishesh",
+        "password": "NJh7bxf4vLXmRNc",
+        "confirmPassword": ""
+    },
+    {
+        "username": "visheshbajpayee",
+        "email": "vishubro22101999@gmail.com",
+        "contact": "vishesh",
+        "password": "NJh7bxf4vLXmRNc",
+        "confirmPassword": "1324567"
+    },
+    {
+        "username": "visheshbajpayee",
+        "email": "vishubro22101999@gmail.com",
+        "contact": "vishesh",
+        "password": "",
+        "confirmPassword": ""
+    },
+    {
+        "username": "vishesh",
+        "email": "vishubro22101999@gmail.com",
+        "contact": "vishesh",
+        "password": "NJh7bxf4vLXmRNc",
+        "confirmPassword": "2131231"
+    },
+    {
+        "username": "vishesh",
+        "email": "vishubro22101999@gmail.com",
+        "contact": "vishesh",
+        "password": "",
+        "confirmPassword": ""
+    },
+    {
+        "username": "vishesh",
+        "email": "vishubro22101999@gmail.com",
+        "contact": "vishesh",
+        "password": "NJh7bxf4vLXmRNc",
+        "confirmPassword": "2131231"
+    },
+    {
+        "username": "Vishesh Bajpayee",
+        "email": "abc@gmail.com",
+        "contact": "9826602789",
+        "password": "Vishu221019991",
+        "confirmPassword": "Vishu221019991"
+    },
+    {
+        "username": "abc",
+        "email": "aayushi.iitg@gmail.com",
+        "contact": "7987852367",
+        "password": "abcd",
+        "confirmPassword": "abcd"
+    },
+    {
+        "username": "abcde",
+        "email": "e@asdas.com",
+        "contact": "7987852367",
+        "password": "abcdef",
+        "confirmPassword": "abcdef"
+    },
+    {
+        "username": "vishesh",
+        "email": "vishubro22101999@gmail.com",
+        "contact": "vishesh",
+        "password": "NJh7bxf4vLXmRNc",
+        "confirmPassword": "`22435657546345"
+    },
+    {
+        "username": "",
+        "email": "",
+        "contact": "",
+        "password": "",
+        "confirmPassword": ""
+    }
 ]

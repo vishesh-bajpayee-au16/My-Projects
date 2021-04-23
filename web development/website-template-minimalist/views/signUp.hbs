@@ -46,7 +46,7 @@
 
 
 <div  class="banner-container  text-light  ">
-<form action="/signin" method="POST">
+<form action="/signUp" method="POST">
   <div class="sub-container">
     <div class="mb-3">
     <label for="username" class="form-label">Enter your Username</label>
@@ -101,7 +101,7 @@
           password:password.value,
           };
       
-      const fetchedData = await axios.post("/signin",data)
+      const fetchedData = await axios.post("/signUp",data)
       
     }
     

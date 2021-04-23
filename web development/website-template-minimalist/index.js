@@ -12,42 +12,46 @@ app.use(express.urlencoded({ extended: true }));
 app.engine(".hbs", exphbs({ extname: ".hbs" }));
 app.set("view engine", ".hbs");
 
+// LOGIN PAGE
 app.get("/", (req, res) => {
   res.render("banner");
 });
 
+// DASHBOARD
+
 app.get("/dashboard", (req, res) => {
-  res.send("Awesome");
+  res.render("dashboard");
 });
 
 app.post("/dashboard", (req, res) => {
   loginData.push(req.body);
-  for (let index = 0; index < userData.length; index++) {
-    const elementU = userData[index];
-    if (req.body.username === elementU.username) {
-      res.render("dashboard", req.body);
-    } else {
-      res.render("signin");
-    }
-  }
 
   fs.writeFileSync(
     __dirname + "/database/login.json",
     JSON.stringify(loginData, null, 4)
   );
+  res.render("dashboard", req.body);
 });
 
-app.get("/signin", (req, res) => {
-  res.render("signin");
+// SIGNUP PAGE
+
+app.get("/signUp", (req, res) => {
+  res.render("signUp");
 });
 
-app.post("/signin", (req, res) => {
-  console.log(req.body);
-  res.render("home", req.body);
+app.post("/signUp", (req, res) => {
   userData.push(req.body);
+  fs.writeFileSync(
+    __dirname + "/database/users.json",
+    JSON.stringify(userData, null, 4)
+  );
+  res.render("dashboard", req.body);
+});
 
-  fs.writeFileSync(__dirname + "/database/users.json"),
-    JSON.stringify(userData, null, 4);
+// TODO PAGE
+
+app.get("/todo", (req, res) => {
+  res.render("todo");
 });
 
 app.listen(5000, () => console.log("Server Started"));
