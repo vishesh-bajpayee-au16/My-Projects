@@ -103,5 +103,26 @@
         "contact": "",
         "password": "",
         "confirmPassword": ""
+    },
+    {
+        "username": "visheshbajpayee",
+        "email": "vishu22101999@gmail.com",
+        "contact": "2412312311",
+        "password": "NJh7bxf4vLXmRNc",
+        "confirmPassword": "211231232321321"
+    },
+    {
+        "username": "visheshbajpayee",
+        "email": "vishu22101999@gmail.com",
+        "contact": "2412312311",
+        "password": "",
+        "confirmPassword": ""
+    },
+    {
+        "username": "visheshbajpayee",
+        "email": "vishu22101999@gmail.com",
+        "contact": "2412312311",
+        "password": "23213",
+        "confirmPassword": ""
     }
 ]
