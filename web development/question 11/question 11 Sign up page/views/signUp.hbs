@@ -1,0 +1,106 @@
+<style>
+    .banner-container {
+        position: absolute;
+        top: 30vh;
+        left: 15vw;
+        width: 35vw;
+        background-color: teal;
+        padding: 40px;
+        border-radius: 30px;
+
+    }
+    #dynamic {
+        color: teal;
+        position: absolute;
+        right: 20vw;
+        font-size: 100px;
+        top:35vh;
+        left: 65vw;
+
+    }
+
+    #website {
+        color: white;
+        font-size: 50px;
+        position: absolute;
+        top: 3.5vw;
+        left: 1vw;
+    }
+
+    #signin-btn{
+        background-color: teal;
+        position: absolute;
+        right: 50px;
+        top: 40px;
+        border-color: teal;
+        color: white;
+    }
+    #alert {
+      color: red;
+      display: none;
+    }
+    .sub-container {
+      width: 20vw;
+    }
+</style>
+
+
+<div  class="banner-container  text-light  ">
+<form action="/signUp" method="POST">
+  <div class="sub-container">
+    <div class="mb-3">
+    <label for="username" class="form-label">Enter your Username</label>
+    <input  type="text" class="form-control" id="username" name="username" >    
+  </div>
+   <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input  name="email" type="email" class="form-control" id="email">
+  </div>
+  <div class="mb-3">
+    <label for="contact" class="form-label">Contact</label>
+    <input  name="contact" type="text" class="form-control" id="contact">
+  </div>
+  <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input  name="password" type="password" class="form-control" id="password">
+  </div>
+   <div class="mb-3">
+     
+    <label for="confirmPassword" class="form-label">Confirm Password</label>
+    <input  name="confirmPassword" type="password" class="form-control" id="confirmPassword">
+    <p id="alert">password not matching</p>
+  </div>
+  <button type="submit" class="btn btn-dark">Submit</button>
+</form>
+  </div>
+</div>
+
+<h1 id="dynamic">Dynamic <span id="website">Website</span></h1>
+
+
+
+
+<script>
+  'use strict';
+    const form = document.getElementsByTagName("form")[0];
+    const username = document.getElementById("username");
+    const email = document.getElementById("email");
+    const contact = document.getElementById("contact");
+    const confirmPassword = document.getElementById("confirmPassword")
+    const password = document.getElementById("password");
+    const alertMessage = document.getElementById("alert");
+    async  () => {
+        
+      
+      const data = {
+          username:username.value,
+          email:email.value,
+          contact:contact.value,
+          password:password.value,
+          };
+      
+      const fetchedData = await axios.post("/signUp",data)
+      
+    }
+    
+</script>
