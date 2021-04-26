@@ -21,4 +21,35 @@ button {
   right: 50px;
   top: 20px;
 }
+
+.buttons #red {
+  background-color: crimson;
+}
+
+.buttons #yellow {
+  background-color: yellow;
+}
+
+.buttons #blue {
+  background-color: teal;
+}
+
+.buttons #green {
+  background-color: greenyellow;
+}
+
+.content {
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+}
+
+.content h1 {
+  font-size: 120px;
+}
+
+.content p {
+  position: absolute;
+  left: 28px;
+}
 /*# sourceMappingURL=style.css.map */

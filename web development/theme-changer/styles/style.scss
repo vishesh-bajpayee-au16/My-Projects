@@ -19,4 +19,30 @@ button {
   position: absolute;
   right: 50px;
   top: 20px;
+
+  #red {
+    background-color: crimson;
+  }
+  #yellow {
+    background-color: yellow;
+  }
+  #blue {
+    background-color: teal;
+  }
+  #green {
+    background-color: greenyellow;
+  }
+}
+
+.content {
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+  h1 {
+    font-size: 120px;
+  }
+  p {
+    position: absolute;
+    left: 28px;
+  }
 }
