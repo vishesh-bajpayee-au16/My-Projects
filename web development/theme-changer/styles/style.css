@@ -1,7 +1,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -20,3 +21,4 @@ button {
   right: 50px;
   top: 20px;
 }
+/*# sourceMappingURL=style.css.map */
