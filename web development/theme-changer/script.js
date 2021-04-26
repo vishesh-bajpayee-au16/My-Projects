@@ -13,15 +13,19 @@ const btnchange = (btn, color) => {
   });
 };
 
+let darkmodeFlag = false;
 darkMode.addEventListener("click", () => {
-  let darkmodeFlag = false;
   if (darkmodeFlag == false) {
     body.style.background = "black";
     darkMode.style.color = "white";
+    heading.style.color = "white";
+    paragraph.style.color = "white";
     darkmodeFlag = true;
   } else if (darkmodeFlag == true) {
     body.style.background = "white";
     darkMode.style.color = "black";
+    heading.style.color = "black";
+    paragraph.style.color = "black";
     darkmodeFlag = false;
   }
 });

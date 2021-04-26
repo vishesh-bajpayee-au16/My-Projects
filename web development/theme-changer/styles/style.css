@@ -27,27 +27,71 @@ button {
 }
 
 .buttons #red {
-  background-color: crimson;
+  background-color: #ce1f6a;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.buttons #red:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 0px 1px 1px #ce1f6a;
+          box-shadow: 0px 0px 1px 1px #ce1f6a;
 }
 
 .buttons #yellow {
-  background-color: yellow;
+  background-color: #ffc93c;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.buttons #yellow:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 0px 1px 1px #ffc93c;
+          box-shadow: 0px 0px 1px 1px #ffc93c;
 }
 
 .buttons #blue {
-  background-color: teal;
+  background-color: #51c4d3;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.buttons #blue:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 0px 1px 1px #51c4d3;
+          box-shadow: 0px 0px 1px 1px #51c4d3;
 }
 
 .buttons #green {
-  background-color: greenyellow;
+  background-color: #206a5d;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.buttons #green:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 0px 1px 1px #206a5d;
+          box-shadow: 0px 0px 1px 1px #206a5d;
 }
 
 .buttons #dark-mode-icon {
+  outline: none;
   position: absolute;
   font-size: 18px;
   top: 11px;
   left: -40px;
   cursor: pointer;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.buttons #dark-mode-icon:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .content {

@@ -25,24 +25,50 @@ button {
   top: 20px;
 
   #red {
-    background-color: crimson;
+    background-color: #ce1f6a;
+    transition: all ease 0.2s;
+    &:hover {
+      transform: scale(1.1);
+
+      box-shadow: 0px 0px 1px 1px #ce1f6a;
+    }
   }
   #yellow {
-    background-color: yellow;
+    background-color: #ffc93c;
+    transition: all ease 0.2s;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 1px 1px #ffc93c;
+    }
   }
   #blue {
-    background-color: teal;
+    background-color: #51c4d3;
+    transition: all ease 0.2s;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 1px 1px #51c4d3;
+    }
   }
   #green {
-    background-color: greenyellow;
+    background-color: #206a5d;
+    transition: all ease 0.2s;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 1px 1px #206a5d;
+    }
   }
 
   #dark-mode-icon {
+    outline: none;
     position: absolute;
     font-size: 18px;
     top: 11px;
     left: -40px;
     cursor: pointer;
+    transition: all ease 0.2s;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
