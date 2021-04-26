@@ -16,6 +16,10 @@ button {
   cursor: pointer;
 }
 
+#body {
+  background-color: white;
+}
+
 .buttons {
   position: absolute;
   right: 50px;
@@ -36,6 +40,14 @@ button {
 
 .buttons #green {
   background-color: greenyellow;
+}
+
+.buttons #dark-mode-icon {
+  position: absolute;
+  font-size: 18px;
+  top: 11px;
+  left: -40px;
+  cursor: pointer;
 }
 
 .content {
