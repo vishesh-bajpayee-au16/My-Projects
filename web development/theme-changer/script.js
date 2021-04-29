@@ -7,9 +7,17 @@ const heading = document.getElementById("heading");
 const paragraph = document.getElementById("paragraph");
 const body = document.getElementById("body");
 const darkMode = document.getElementById("dark-mode-icon");
+const home = document.getElementById("home");
+const contact = document.getElementById("contact");
+const about = document.getElementById("about");
+const services = document.getElementById("services");
 const btnchange = (btn, color) => {
   btn.addEventListener("click", () => {
     span.style.color = "#" + color;
+    home.style.color = "#" + color;
+    about.style.color = "#" + color;
+    contact.style.color = "#" + color;
+    services.style.color = "#" + color;
   });
 };
 
@@ -20,6 +28,7 @@ darkMode.addEventListener("click", () => {
     darkMode.style.color = "white";
     heading.style.color = "white";
     paragraph.style.color = "white";
+
     darkmodeFlag = true;
   } else if (darkmodeFlag == true) {
     body.style.background = "white";
