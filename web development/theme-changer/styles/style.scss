@@ -84,3 +84,15 @@ button {
     left: 28px;
   }
 }
+
+.links {
+  position: absolute;
+  top: 25px;
+
+  a {
+    margin: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+  }
+}

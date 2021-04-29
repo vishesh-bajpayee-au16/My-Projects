@@ -108,4 +108,16 @@ button {
   position: absolute;
   left: 28px;
 }
+
+.links {
+  position: absolute;
+  top: 25px;
+}
+
+.links a {
+  margin: 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
 /*# sourceMappingURL=style.css.map */
