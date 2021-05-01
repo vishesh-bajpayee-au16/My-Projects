@@ -6,11 +6,12 @@
         "confirm password": "abc",
         "_locals": {}
     },
-    {},
-    {},
-    {},
-    {},
-    {},
+    {
+        "username": "",
+        "password": "",
+        "email": "",
+        "confirm password": ""
+    },
     {},
     {},
     {}

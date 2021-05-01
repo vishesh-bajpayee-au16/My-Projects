@@ -109,3 +109,26 @@
   left: 15vw;
   top: 0px;
 }
+
+.invalid-container {
+  #invalid-heading {
+    font-size: 150px;
+    position: absolute;
+    top: 30vh;
+    left: 25vw;
+    font-weight: 600;
+  }
+  button {
+    padding: 5px 15px 5px 15px;
+    border: none;
+    outline: none;
+    background-color: crimson;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 50vh;
+    left: 45vw;
+  }
+}
