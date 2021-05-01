@@ -29,6 +29,10 @@ app.get("/", (req, res) => {
 
 // login route
 
+app.get("/login", (req, res) => {
+  res.render("login");
+});
+
 app.post("/login", (req, res) => {
   const userSigned = req.body;
   usersData.push(userSigned);
@@ -51,7 +55,7 @@ app.post("/dashboard", (req, res) => {
       res.render("dashboard");
       return;
     } else {
-      res.send("User not found");
+      res.render("invalid-entry");
     }
   }
 });
