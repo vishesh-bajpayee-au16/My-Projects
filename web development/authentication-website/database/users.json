@@ -43,5 +43,29 @@
         "email": "vishubro22101999@gmail.com",
         "confirm password": "",
         "_locals": {}
+    },
+    {
+        "username": "anonyminator",
+        "password": "123123",
+        "email": "vishusis22101999@gmail.com",
+        "confirm password": "123123",
+        "_locals": {}
+    },
+    {
+        "username": "213",
+        "password": "123",
+        "email": "vishusis22101999@gmail.com",
+        "confirm password": "123",
+        "_locals": {}
+    },
+    {
+        "username": "213",
+        "password": "123",
+        "email": "vishusis22101999@gmail.com",
+        "confirm password": "123",
+        "_locals": {}
+    },
+    {
+        "_locals": {}
     }
 ]

@@ -28,6 +28,7 @@ app.get("/", (req, res) => {
 });
 
 // login route
+
 app.post("/login", (req, res) => {
   res.render("login", req.body);
   usersData.push(req.body);
@@ -40,6 +41,12 @@ app.post("/login", (req, res) => {
 // signup route
 app.post("/signup", (req, res) => {
   res.render("signup");
+});
+
+// dashboard
+
+app.post("/dashboard", (req, res) => {
+  res.send("dashboard");
 });
 
 // CREATING SERVER
