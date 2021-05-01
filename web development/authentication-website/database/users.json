@@ -1,70 +1,12 @@
 [
     {
+        "username": "gmail",
+        "password": "abc",
+        "email": "gmail@gmail.com",
+        "confirm password": "abc",
         "_locals": {}
     },
-    {
-        "_locals": {}
-    },
-    {
-        "username": "Vishesh Bajpayee",
-        "password": "123abc",
-        "email": "abc@gmail.com",
-        "confirm password": "123abc",
-        "_locals": {}
-    },
-    {
-        "username": "Vishesh Bajpayee",
-        "password": "123abc",
-        "email": "abc@gmail.com",
-        "confirm password": "123abc",
-        "_locals": {}
-    },
-    {
-        "username": "abcdef",
-        "password": "abcdef",
-        "email": "abcdef@gmail.com",
-        "confirm password": "abcdef",
-        "_locals": {}
-    },
-    {
-        "_locals": {}
-    },
-    {
-        "username": "vishu",
-        "password": "vishu",
-        "email": "vishu@gmail.com",
-        "confirm password": "vishu",
-        "_locals": {}
-    },
-    {
-        "username": "vishu",
-        "password": "vishu",
-        "email": "vishu@gmail.com",
-        "confirm password": "vishu",
-        "_locals": {}
-    },
-    {
-        "_locals": {}
-    },
-    {
-        "_locals": {}
-    },
-    {
-        "_locals": {}
-    },
-    {
-        "_locals": {}
-    },
-    {
-        "_locals": {}
-    },
-    {
-        "_locals": {}
-    },
-    {
-        "_locals": {}
-    },
-    {
-        "_locals": {}
-    }
+    {},
+    {},
+    {}
 ]
