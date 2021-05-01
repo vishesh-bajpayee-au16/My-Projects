@@ -21,8 +21,20 @@ app.engine(".hbs", exphbs({ extname: ".hbs" }));
 app.set("view engine", ".hbs");
 
 // DECLARING ROUTES
+
+// home route
 app.get("/", (req, res) => {
   res.render("home");
+});
+
+// login route
+app.post("/login", (req, res) => {
+  res.render("login", req.body);
+});
+
+// signup route
+app.post("/signup", (req, res) => {
+  res.render("signup");
 });
 
 // CREATING SERVER

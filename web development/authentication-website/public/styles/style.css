@@ -46,4 +46,61 @@
   left: 5vw;
   top: 0px;
 }
+
+#loginHeading {
+  font-size: 150px;
+  position: absolute;
+  top: 30vh;
+  left: 25vw;
+  font-weight: 600;
+}
+
+#loginForm {
+  position: absolute;
+  top: 48vh;
+  left: 27vw;
+}
+
+#loginForm h3 {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+#loginForm input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid crimson;
+  outline: none;
+}
+
+#loginForm .username {
+  margin-bottom: 20px;
+}
+
+#loginForm .password {
+  margin-bottom: 20px;
+}
+
+#loginForm button {
+  padding: 5px 15px 5px 15px;
+  border: none;
+  outline: none;
+  background-color: crimson;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+#goback {
+  padding: 5px 15px 5px 15px;
+  border: none;
+  outline: none;
+  background-color: crimson;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  position: absolute;
+  top: 66.1vh;
+  left: 33vw;
+}
 /*# sourceMappingURL=style.css.map */
