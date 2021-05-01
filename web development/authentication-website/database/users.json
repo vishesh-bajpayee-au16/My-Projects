@@ -1,1 +1,47 @@
-[]
+[
+    {
+        "username": "anonyminator",
+        "password": "123123",
+        "email": "vishusis22101999@gmail.com",
+        "confirm password": "123123",
+        "_locals": {}
+    },
+    {
+        "username": "anonyminator",
+        "password": "123123",
+        "email": "vishusis22101999@gmail.com",
+        "confirm password": "123123",
+        "_locals": {}
+    },
+    {
+        "username": "anonyminator",
+        "password": "123",
+        "email": "vishusis22101999@gmail.com",
+        "confirm password": "123",
+        "_locals": {}
+    },
+    {
+        "username": "123123",
+        "password": "123123",
+        "email": "vishusis22101999@gmail.com",
+        "confirm password": "123123",
+        "_locals": {}
+    },
+    {
+        "_locals": {}
+    },
+    {
+        "username": "anonyminator",
+        "password": "123",
+        "email": "vishusis22101999@gmail.com",
+        "confirm password": "123",
+        "_locals": {}
+    },
+    {
+        "username": "anonyminator",
+        "password": "",
+        "email": "vishubro22101999@gmail.com",
+        "confirm password": "",
+        "_locals": {}
+    }
+]

@@ -30,7 +30,11 @@ app.get("/", (req, res) => {
 // login route
 app.post("/login", (req, res) => {
   res.render("login", req.body);
-  console.log(req.body);
+  usersData.push(req.body);
+  fs.writeFileSync(
+    __dirname + "/database/users.json",
+    JSON.stringify(usersData, null, 4)
+  );
 });
 
 // signup route
