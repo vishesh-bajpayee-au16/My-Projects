@@ -1,0 +1,14 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.buttons {
+  position: absolute;
+}
