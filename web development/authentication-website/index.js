@@ -30,8 +30,9 @@ app.get("/", (req, res) => {
 // login route
 
 app.post("/login", (req, res) => {
-  res.render("login", req.body);
-  usersData.push(req.body);
+  const userSigned = req.body;
+  res.render("login", userSigned);
+  usersData.push(userSigned);
   fs.writeFileSync(
     __dirname + "/database/users.json",
     JSON.stringify(usersData, null, 4)
@@ -44,9 +45,29 @@ app.post("/signup", (req, res) => {
 });
 
 // dashboard
+app.get("/dashboard", (req, res) => {
+  res.render("dashboard");
+});
 
 app.post("/dashboard", (req, res) => {
-  res.send("dashboard");
+  const userLogged = req.body;
+  loginData.push(userLogged);
+  fs.writeFileSync(
+    __dirname + "/database/login-log.json",
+    JSON.stringify(loginData, null, 4)
+  );
+  for (let index = 0; index < usersData.length; index++) {
+    const user = usersData[index];
+    if (
+      user.username === userLogged.username &&
+      user.password === userLogged.password
+    ) {
+      res.render("dashboard", userLogged);
+      return;
+    } else {
+      continue;
+    }
+  }
 });
 
 // CREATING SERVER
