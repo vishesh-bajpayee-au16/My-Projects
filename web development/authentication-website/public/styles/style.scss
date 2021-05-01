@@ -74,6 +74,9 @@
     margin-bottom: 20px;
   }
 
+  .email {
+    margin-bottom: 20px;
+  }
   button {
     padding: 5px 15px 5px 15px;
     border: none;
@@ -96,4 +99,10 @@
   position: absolute;
   top: 66.1vh;
   left: 33vw;
+}
+
+.passwords {
+  position: absolute;
+  left: 15vw;
+  top: 0px;
 }
