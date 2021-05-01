@@ -1,5 +1,5 @@
 <h1 id="loginHeading">The Website</h1>
-<form id="loginForm" action="">
+<form id="loginForm" action="/login" method="POST">
     <div class="username">
         <h3>Username</h3>
     <input type="text" name="username" id="username">
@@ -23,7 +23,27 @@
    <button type="submit"> Sign up</button>
 </form> 
 
-<form action="/" >
+<script>
+    const username = document.getElementById("username");
+    const email = document.getElementById("email");
+    const password = document.getElementById("password");
+    const confirmPassword = document.getElementById("conform-password");
+    const form = document.getElementById("loginForm")
 
+      async ()=> {
+        e.preventDefault();
+
+        const data = {
+            username: username.value,
+            email: email.value,
+            password: confirmPassword.value,
+
+        }
+        await axios.post("/login",data);
+    };
+</script>
+
+
+<form action="/" >
 <button id="goback" type="submit"> Go back</button>
 </form>

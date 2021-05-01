@@ -39,6 +39,7 @@
   color: white;
   border-radius: 10px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .buttons #signup {
@@ -93,6 +94,7 @@
   color: white;
   border-radius: 10px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 #goback {
@@ -106,6 +108,7 @@
   position: absolute;
   top: 66.1vh;
   left: 33vw;
+  cursor: pointer;
 }
 
 .passwords {

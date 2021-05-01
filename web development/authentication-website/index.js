@@ -30,6 +30,7 @@ app.get("/", (req, res) => {
 // login route
 app.post("/login", (req, res) => {
   res.render("login", req.body);
+  console.log(req.body);
 });
 
 // signup route
