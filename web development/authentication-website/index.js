@@ -50,14 +50,17 @@ app.post("/signup", (req, res) => {
 
 // dashboard
 app.post("/dashboard", (req, res) => {
-  for (const user of usersData) {
-    if (user.username === req.body.username) {
+  for (let index = 0; index < usersData.length; index++) {
+    const userObj = usersData[index];
+    if (
+      userObj.username === req.body.username &&
+      userObj.password === req.body.password
+    ) {
       res.render("dashboard");
       return;
-    } else {
-      res.render("invalid-entry");
     }
   }
+  res.render("invalid-entry");
 });
 
 // CREATING SERVER

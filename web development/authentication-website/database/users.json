@@ -1,18 +1,28 @@
 [
-    {
-        "username": "gmail",
-        "password": "abc",
-        "email": "gmail@gmail.com",
-        "confirm password": "abc",
-        "_locals": {}
-    },
-    {
-        "username": "",
-        "password": "",
-        "email": "",
-        "confirm password": ""
-    },
-    {},
-    {},
-    {}
+  {
+    "username": "gmail",
+    "password": "abc",
+    "email": "gmail@gmail.com",
+    "confirm password": "abc",
+    "_locals": {}
+  },
+  {
+    "username": "abcd",
+    "password": "123",
+    "email": "abc@gmail.com",
+    "confirm password": "123"
+  },
+  {
+    "username": "vishesh",
+    "password": "vishesh",
+    "email": "vishesh@vishesh.com",
+    "confirm password": "vishesh"
+  },
+
+  {
+    "username": "vishuawesome",
+    "password": "Vishu221019991",
+    "email": "vishusis22101999@gmail.com",
+    "confirm password": "Vishu221019991"
+  }
 ]
