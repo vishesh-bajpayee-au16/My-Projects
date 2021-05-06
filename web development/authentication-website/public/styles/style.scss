@@ -35,6 +35,12 @@
     border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
+    transition: all ease-in 0.2s;
+    &:hover {
+      background-color: rgb(240, 212, 212);
+      transform: scale(1.1);
+      color: crimson;
+    }
   }
 
   #signup {
@@ -87,6 +93,12 @@
     border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
+    transition: all ease-in 0.2s;
+    &:hover {
+      background-color: rgb(240, 212, 212);
+      transform: scale(1.1);
+      color: crimson;
+    }
   }
 }
 
@@ -102,6 +114,12 @@
   top: 66.1vh;
   left: 33vw;
   cursor: pointer;
+  transition: all ease-in 0.2s;
+  &:hover {
+    background-color: rgb(240, 212, 212);
+    transform: scale(1.1);
+    color: crimson;
+  }
 }
 
 .passwords {
@@ -130,5 +148,11 @@
     position: absolute;
     top: 50vh;
     left: 45vw;
+    transition: all ease-in 0.2s;
+    &:hover {
+      background-color: rgb(240, 212, 212);
+      transform: scale(1.1);
+      color: crimson;
+    }
   }
 }

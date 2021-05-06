@@ -40,6 +40,15 @@
   border-radius: 10px;
   font-size: 20px;
   cursor: pointer;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+.buttons button:hover {
+  background-color: #f0d4d4;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: crimson;
 }
 
 .buttons #signup {
@@ -95,6 +104,15 @@
   border-radius: 10px;
   font-size: 20px;
   cursor: pointer;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+#loginForm button:hover {
+  background-color: #f0d4d4;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: crimson;
 }
 
 #goback {
@@ -109,6 +127,15 @@
   top: 66.1vh;
   left: 33vw;
   cursor: pointer;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+#goback:hover {
+  background-color: #f0d4d4;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: crimson;
 }
 
 .passwords {
@@ -137,5 +164,14 @@
   position: absolute;
   top: 50vh;
   left: 45vw;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+.invalid-container button:hover {
+  background-color: #f0d4d4;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: crimson;
 }
 /*# sourceMappingURL=style.css.map */
