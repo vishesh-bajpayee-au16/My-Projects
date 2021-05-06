@@ -10,5 +10,11 @@
     {},
     {},
     {},
-    {}
+    {},
+    {
+        "username": "user1",
+        "password": "user1",
+        "email": "user@gmail.com",
+        "confirm password": "user1"
+    }
 ]
