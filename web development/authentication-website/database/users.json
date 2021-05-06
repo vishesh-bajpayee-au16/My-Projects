@@ -29,5 +29,29 @@
     {},
     {},
     {},
-    {}
+    {},
+    {
+        "username": "22vishesh22",
+        "password": "vv22vv22",
+        "email": "vishu22101999@gmail.com",
+        "confirm password": "vv22vv22"
+    },
+    {
+        "username": "22vishesh22",
+        "password": "vv22vv22",
+        "email": "vishu22101999@gmail.com",
+        "confirm password": "vv22vv22"
+    },
+    {
+        "username": "22vishesh22",
+        "password": "23",
+        "email": "vishu22101999@gmail.com",
+        "confirm password": "12312"
+    },
+    {
+        "username": "123",
+        "password": "12313",
+        "email": "vishubro22101999@gmail.com",
+        "confirm password": "213213"
+    }
 ]
