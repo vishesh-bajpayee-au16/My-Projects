@@ -49,6 +49,15 @@ app.post("/signup", (req, res) => {
 });
 
 // dashboard
+app.get("/dashboard", (req, res) => {
+  if (req.headers.cookie.includes("userIdentified") === true) {
+    res.render("dashboard");
+    return;
+  }
+
+  res.redirect("/");
+});
+
 app.post("/dashboard", (req, res) => {
   for (let index = 0; index < usersData.length; index++) {
     const userObj = usersData[index];
@@ -56,7 +65,8 @@ app.post("/dashboard", (req, res) => {
       userObj.username === req.body.username &&
       userObj.password === req.body.password
     ) {
-      res.cookie("userIdentified", userObj.username);
+      const expiryDate = 30000;
+      res.cookie("userIdentified", userObj.username, { expires: expiryDate });
       res.render("dashboard");
       return;
     }
@@ -64,5 +74,7 @@ app.post("/dashboard", (req, res) => {
   res.render("invalid-entry");
 });
 
+// signout
+
 // CREATING SERVER
-app.listen(3001, () => console.log("Server Started"));
+app.listen(3010, () => console.log("Server Started"));
