@@ -56,6 +56,7 @@ app.post("/dashboard", (req, res) => {
       userObj.username === req.body.username &&
       userObj.password === req.body.password
     ) {
+      res.cookie("userIdentified", userObj.username);
       res.render("dashboard");
       return;
     }

@@ -174,4 +174,52 @@
           transform: scale(1.1);
   color: crimson;
 }
+
+#dashboard-button {
+  padding: 5px 15px 5px 15px;
+  border: none;
+  outline: none;
+  background-color: crimson;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 4vh;
+  right: 10vw;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+  text-decoration: none;
+}
+
+#dashboard-button:hover {
+  background-color: #f0d4d4;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: crimson;
+}
+
+#signout {
+  padding: 5px 15px 5px 15px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 4vh;
+  right: 3vw;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+  text-decoration: none;
+}
+
+#signout:hover {
+  background-color: #f0d4d4;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: crimson;
+}
 /*# sourceMappingURL=style.css.map */

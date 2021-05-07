@@ -156,3 +156,44 @@
     }
   }
 }
+
+#dashboard-button {
+  padding: 5px 15px 5px 15px;
+  border: none;
+  outline: none;
+  background-color: crimson;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 4vh;
+  right: 10vw;
+  transition: all ease-in 0.2s;
+  text-decoration: none;
+  &:hover {
+    background-color: rgb(240, 212, 212);
+    transform: scale(1.1);
+    color: crimson;
+  }
+}
+#signout {
+  padding: 5px 15px 5px 15px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 4vh;
+  right: 3vw;
+  transition: all ease-in 0.2s;
+  text-decoration: none;
+  &:hover {
+    background-color: rgb(240, 212, 212);
+    transform: scale(1.1);
+    color: crimson;
+  }
+}
