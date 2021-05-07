@@ -6,26 +6,25 @@
         "confirm password": "abc",
         "_locals": {}
     },
-    {},
-    {},
-    {},
-    {},
-    {},
     {
         "username": "user1",
         "password": "user1",
         "email": "user@gmail.com",
-        "confirm password": "user1"
+        "confirm password": "user1",
+        "_locals": {}
     },
-    {},
-    {},
-    {},
     {
         "username": "abcd1234",
         "password": "abcd1234",
         "email": "abcd@gmail.com",
         "confirm password": "abcd1234"
     },
+    {
+        "_locals": {}
+    },
+    {},
+    {},
+    {},
     {},
     {},
     {},

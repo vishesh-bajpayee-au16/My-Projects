@@ -65,9 +65,8 @@ app.post("/dashboard", (req, res) => {
       userObj.username === req.body.username &&
       userObj.password === req.body.password
     ) {
-      const expiryDate = 30000;
-      res.cookie("userIdentified", userObj.username, { expires: expiryDate });
-      res.render("dashboard");
+      res.cookie("userIdentified", userObj.username);
+      res.render("dashboard", userObj);
       return;
     }
   }
